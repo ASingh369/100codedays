@@ -37,6 +37,7 @@ main {
   border-top: 1px solid #f9cc41;
   width: 70px;
   margin-left: 0;
+  margin-right: auto;
 }
 
 .scrollmenu {
@@ -78,4 +79,15 @@ main {
 
 .hide {
   visibility: hidden;
+}
+
+.fa-plus-circle {
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.fa-plus-circle:hover {
+  color: black;
+  transform: rotate(90deg);
 }
