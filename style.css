@@ -1,0 +1,81 @@
+html,
+body {
+  height: 100%;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-dark {
+  background-color: #1d1d1d !important;
+}
+
+.bg-yellow {
+  background-color: #f9cc41;
+}
+
+.text-yellow {
+  color: #f9cc41;
+}
+
+.alt-font {
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+main {
+  padding: 50px 0;
+}
+
+.hr-yellow-small {
+  border-top: 1px solid #f9cc41;
+  width: 70px;
+  margin-left: 0;
+}
+
+.scrollmenu {
+  overflow: auto;
+  /* white-space: nowrap; */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollmenu {
+  overflow: -moz-scrollbars-none;
+}
+
+.scrollmenu::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+.fixed-width {
+  width: 200px;
+}
+.day-description {
+  overflow: auto;
+  height: 200px;
+  width: 300px;
+}
+
+.add-day {
+  height: 200px;
+  width: 300px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.hide {
+  visibility: hidden;
+}

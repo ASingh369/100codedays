@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>100 Days of Code</title>
+  </head>
+  <body class="bg-black text-light">
+    <header class="py-3 bg-dark px-2">
+      <div class="d-flex align-items-center">
+        <img src="img/logo.png" height="35" alt="" />
+        <h3 class="d-sm-inline d-none font-weight-bold alt-font mb-0">
+          CodeDays
+        </h3>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-outline-light ml-auto"
+          data-toggle="modal"
+          data-target="#daysModal"
+        >
+          Update Data
+        </button>
+      </div>
+    </header>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="daysModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Select Day</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true" class="text-light">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="d-inline bg-light text-dark m-1 px-2 py-1 rounded">
+              1
+            </div>
+            <div class="d-inline bg-light text-dark m-1 px-2 py-1 rounded">
+              100
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="d-flex h-100 alt-font align-items-center">
+      <div class="container">
+        <div class="">
+          <h2 class="font-weight-bold d-inline pb-3">
+            Days
+          </h2>
+        </div>
+        <hr class="hr-yellow-small" />
+        <div>
+          <div class="scrollmenu my-3 d-flex">
+            <div class="bg-light text-dark rounded m-2 p-2">
+              <h6 class="font-weight-bold">Day 1</h6>
+              <!--Vertically scrollable day description-->
+              <div class="day-description py-2 mb-2 rounded border px-2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officiis recusandae repellat praesentium explicabo quod. Cons
+              </div>
+              Time spent: 2h 30min
+            </div>
+            <div class="bg-light text-dark rounded m-2 p-2">
+              <h6 class="font-weight-bold">Add Day</h6>
+              <!--Vertically scrollable day description-->
+              <div
+                class="add-day py-2 mb-2 rounded border px-2 d-flex align-items-center justify-content-center"
+              >
+                <a href="" data-toggle="modal" data-target="#daysModal"
+                  ><i class="fas fa-plus-circle text-yellow fa-7x"></i
+                ></a>
+              </div>
+              <div class="hide">.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer bg-dark pb-3 alt-font">
+      <div class="progress mb-3" style="height:2px;">
+        <div class="progress-bar bg-yellow" style="width:75%;"></div>
+      </div>
+      <div class="px-2">
+        <div class="d-flex justify-content-around text-muted">
+          <div>
+            <span id="days_left" class="text-light">100</span> Days Left
+          </div>
+          <div>
+            <span id="time_spent" class="text-light">3h 40min</span> spent
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
