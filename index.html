@@ -29,11 +29,11 @@
   </head>
   <body class="bg-black text-light">
     <header class="py-3 bg-dark px-2">
-      <div class="d-flex align-items-center">
-        <img src="img/logo.png" height="35" alt="" />
+      <div class="d-flex">
+        <a href="" class="d-flex align-tems-center text-light no-underline"><img src="img/logo.png" height="35" alt="" />
         <h3 class="d-sm-inline d-none font-weight-bold alt-font mb-0">
           CodeDays
-        </h3>
+        </h3></a> 
         <!-- Button trigger modal -->
         <button
           type="button"
@@ -43,6 +43,7 @@
         >
           Update Data
         </button>
+        <a href="" class="btn btn-outline-light ml-2" id="restart">Restart</a>
       </div>
     </header>
 
@@ -74,17 +75,6 @@
         </div>
       </div>
     </div>
-
-    <!--Used just for testing-->
-    <!-- Button trigger modal -->
-    <!-- <button
-      type="button"
-      class="btn btn-danger ml-auto mt-5 pt-5"
-      data-toggle="modal"
-      data-target="#formModal"
-    >
-      Update Data
-    </button> -->
 
     <!-- Form Modal -->
     <div
@@ -167,14 +157,16 @@
           </h2>
         </div>
         <hr class="hr-yellow-small" />
-        <div>
-          <div class="scrollmenu my-3 d-flex" id="menu">
+        <div class="align-items-center">
+            <i class="fas fa-chevron-circle-left fa-3x cursor-pointer btn-link no-underline" id="left-arrow"></i>
+            <div class="pl-2 pr-4">
+          <div class="scrollmenu my-3 d-flex w-100" id="menu">
             
             <div class="bg-light text-dark rounded m-2 p-2">
               <h6 class="font-weight-bold">Add Day</h6>
               <!--Vertically scrollable day description-->
               <div
-                class="add-day py-2 mb-2 rounded border px-2 d-flex align-items-center justify-content-center"
+                class="add-day shadow py-2 mb-2 rounded border px-2 d-flex align-items-center justify-content-center"
               >
                 <a href="" data-toggle="modal" data-target="#daysModal"
                   ><i class="fas fa-plus-circle text-success fa-6x"></i
@@ -184,20 +176,22 @@
             </div>
           </div>
         </div>
+         <i class="fas fa-chevron-circle-right fa-3x btn-link cursor-pointer no-underline" id="right-arrow"></i> 
+        </div>
       </div>
     </main>
 
     <div class="footer bg-dark pb-3 alt-font">
       <div class="progress mb-3" style="height:2px;">
-        <div class="progress-bar bg-yellow" style="width:75%;"></div>
+        <div class="progress-bar bg-yellow" style="width:75%;" id="progress"></div>
       </div>
       <div class="px-2">
         <div class="d-flex justify-content-around text-muted">
           <div>
-            <span id="days_left" class="text-light">100</span> Days Left
+            <span class="text-light" id="days-left">100</span> Days Left
           </div>
           <div>
-            <span id="time_spent" class="text-light">3h 40min</span> spent
+            <span class="text-light" id="total-time-spent">3h 40min</span> spent
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  max-width: 100%;
 }
 
 .bg-black {
@@ -102,4 +103,22 @@ main {
 .pointer:hover {
   background-color: #f9cc41 !important;
   color: #fff !important;
+}
+
+#left-arrow,
+#right-arrow {
+  position: absolute;
+  display: none;
+}
+
+.no-underline:hover {
+  text-decoration: none !important;
+}
+
+.bg-none {
+  background-color: #fff;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
