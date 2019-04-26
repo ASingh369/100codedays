@@ -109,6 +109,7 @@ main {
 #right-arrow {
   position: absolute;
   display: none;
+  color: #ddd;
 }
 
 .no-underline:hover {

@@ -14,6 +14,7 @@ const progress = document.querySelector("#progress");
 const leftArrow = document.querySelector("#left-arrow");
 const rightArrow = document.querySelector("#right-arrow");
 const restart = document.querySelector("#restart");
+const addTag = document.querySelector("#add-tag");
 
 let selectedDay; // used when user selects a particular day
 
@@ -152,6 +153,11 @@ function getDaysData() {
   });
   totalTimeSpent.innerHTML =
     parseInt(totalMinutes / 60) + "h " + (totalMinutes % 60) + "min";
+
+  // hide add tag if all 100 days are completed
+  if (days.length == 100) {
+    addTag.style.display = "none";
+  }
 }
 
 // Add Day Data
